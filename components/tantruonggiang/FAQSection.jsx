@@ -93,9 +93,9 @@ export default function FAQSection() {
               <a href="tel:+84962922332" className="hover:text-orange-500 transition-colors duration-200">
                 Hotline/Zalo: 096.292.2332
               </a>{" "}
-              |{" "}
+            <br/>
               <a href="mailto:tantruonggiang.noithat@gmail.com" className="hover:text-orange-500 transition-colors duration-200">
-                tantruonggiang.noithat@gmail.com
+                Email: tantruonggiang.noithat@gmail.com
               </a>
             </p>
             <div className="relative h-48 rounded-lg overflow-hidden mb-4">

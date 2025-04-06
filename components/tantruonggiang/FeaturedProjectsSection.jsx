@@ -21,7 +21,7 @@ export default function FeaturedProjectsSection() {
           {/* Hình ảnh chính (bên trái) */}
           <div className="lg:col-span-2 relative group">
             <Link href="/du-an/du-an-anh-dat-ung-hoa-nha-pho-90m2" className="block">
-              <div className="relative w-full h-64 md:h-96">
+              <div className="relative w-full h-64 md:h-[31rem]">
                 <Image
                   src="/product/biet-thu/noi-that-biet-thu (4).jpg"
                   alt="Dự án nổi bật chính"
@@ -37,7 +37,6 @@ export default function FeaturedProjectsSection() {
                 </div>
               </div>
             </Link>
-            {/* Tiêu đề cho ảnh chính */}
             <h3 className="text-sm md:text-base font-semibold text-gray-300 mt-4">
               Thiết kế nội thất biệt thự sang trọng tại Hà Nội
             </h3>

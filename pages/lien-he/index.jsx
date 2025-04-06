@@ -46,11 +46,7 @@ export default function ContactPage() {
                 Địa chỉ
               </h3>
               <p className="text-gray-400">
-                Đồng Tân, Ứng Hòa, Hà Nội
-                <br></br>
-                <p>
-                    ( Cạnh cổng trường THPT Ứng Hòa B )
-                </p>
+              Số 10 lô C5, KDT Geleximco Lê Trọng Tấn, Hà Đông, Hà Nội
               </p>
             </div>
             {/* Card: E-Mail */}
@@ -61,7 +57,7 @@ export default function ContactPage() {
               <h3 className="text-white text-xl font-semibold mb-2">
                 E-Mail
               </h3>
-              <p className="text-gray-400">truong@truongnq.vn</p>
+              <p className="text-gray-400">tantruonggiang.noithat@gmail.com</p>
             </div>
             {/* Card: Số điện thoại */}
             <div className="bg-gray-700 p-8 rounded-lg text-center">
@@ -71,7 +67,8 @@ export default function ContactPage() {
               <h3 className="text-white text-xl font-semibold mb-2">
                 Số điện thoại
               </h3>
-              <p className="text-gray-400">0866.572.271</p>
+              <p className="text-gray-400">096.292.2332
+              </p>
             </div>
           </div>
           <ContactForm />

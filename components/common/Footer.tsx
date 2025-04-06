@@ -56,11 +56,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Giới Thiệu</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-orange-500">Về Tân Trường Giang</a></li>
-              <li><a href="#" className="hover:text-orange-500">Liên hệ</a></li>
-              <li><a href="#" className="hover:text-orange-500">Tuyển dụng</a></li>
-              <li><a href="#" className="hover:text-orange-500">Video</a></li>
-              <li><a href="#" className="hover:text-orange-500">Tin tức</a></li>
+              <li><a href="/gioi-thieu" className="hover:text-orange-500">Về Tân Trường Giang</a></li>
+              <li><a href="/lien-he" className="hover:text-orange-500">Liên hệ</a></li>
+              <li><a href="/tuyen-dung" className="hover:text-orange-500">Tuyển dụng</a></li>
+              <li><a href="/du-an" className="hover:text-orange-500">Dự án</a></li>
+              <li><a href="/bai-viet" className="hover:text-orange-500">Tin tức</a></li>
             </ul>
           </div>
 
@@ -68,9 +68,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Dịch Vụ</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-orange-500">Thiết kế nội thất</a></li>
-              <li><a href="#" className="hover:text-orange-500">Thi công nội thất</a></li>
-              <li><a href="#" className="hover:text-orange-500">Nội thất gỗ đặc chọn</a></li>
+              <li><a href="/thiet-ke-noi-that-chung-cu" className="hover:text-orange-500">Thiết kế nội thất chung cư</a></li>
+              <li><a href="/thiet-ke-noi-that-nha-pho" className="hover:text-orange-500">Thiết kế nội thất nhà phố</a></li>
+              <li><a href="/thi-cong-noi-that-chung-cu" className="hover:text-orange-500">Thi công nội thất chung cư</a></li>
+              <li><a href="/thi-cong-noi-that-nha-pho" className="hover:text-orange-500">Thi công nội thất nhà phố</a></li>
+
             </ul>
           </div>
 
@@ -133,7 +135,7 @@ export default function Footer() {
             CÔNG TY CỔ PHẦN KIẾN TRÚC NỘI THẤT TÂN TRƯỜNG GIANG
           </p>
           <div className="flex space-x-4 mb-3 md:mb-0">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/NoiThatTanTruongGiang" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="text-white hover:text-orange-500 text-xl" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">

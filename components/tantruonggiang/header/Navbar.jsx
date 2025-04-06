@@ -54,7 +54,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full transition-all duration-300 ease-in-out z-10 ${
+        className={`fixed top-0 left-0 w-full transition-all duration-300 ease-in-out z-50 ${
           scrolling ? "bg-black shadow-md py-2 md:py-4" : "bg-black p-2 md:p-3"
         }`}
       >
@@ -132,7 +132,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/tin-tuc" className="text-white hover:text-yellow-400 transition-colors duration-200">
+                <Link href="/bai-viet" className="text-white hover:text-yellow-400 transition-colors duration-200">
                   Tin Tức
                 </Link>
               </li>

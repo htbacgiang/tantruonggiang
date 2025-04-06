@@ -5,10 +5,10 @@ const FurnitureViewer = () => {
   const videoLinks = {
     "PHÒNG KHÁCH": "https://www.jegaai.com/720/S5DDIGDJCI", // Giả định
     "PHÒNG ĂN": "https://www.jegaai.com/720/S5DDIGDJCI", // Link thật bạn cung cấp
-    "NHÀ BẾP": "https://www.jegaai.com/720/ROOM3", // Giả định
-    "VĂN PHÒNG": "https://www.jegaai.com/720/ROOM4", // Giả định
-    "PHÒNG NGỦ": "https://www.jegaai.com/720/ROOM5", // Giả định
-    "SẢNH CHỜ": "https://www.jegaai.com/720/ROOM6", // Giả định
+    "NHÀ BẾP": "https://www.jegaai.com/720/S5DDIGDJCI", // Giả định
+    "VĂN PHÒNG": "https://www.jegaai.com/720/S5DDIGDJCI", // Giả định
+    "PHÒNG NGỦ": "https://www.jegaai.com/720/S5DDIGDJCI", // Giả định
+    "SẢNH CHỜ": "https://www.jegaai.com/720/S5DDIGDJCI", // Giả định
   };
 
   // Trạng thái để theo dõi tab đang được chọn
@@ -24,7 +24,7 @@ const FurnitureViewer = () => {
       {/* Header */}
       <div className="w-full max-w-6xl flex justify-between items-center mb-4">
         <h2 className="text-3xl font-bold">THIẾT KẾ 3D HIỆN ĐẠI</h2>
-        <p className="text-orange-500 text-sm">PHONG PHÚ ĐA DẠNG</p>
+        <p className="text-orange-500 text-base">PHONG PHÚ ĐA DẠNG</p>
       </div>
 
       {/* Main Content */}

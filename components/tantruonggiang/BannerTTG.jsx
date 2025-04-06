@@ -75,13 +75,13 @@ export default function Banner() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-        <p className="text-orange-500 text-sm uppercase tracking-widest mb-2">
+        <p className="text-orange-200 text-xl font-bold uppercase tracking-widest mb-2">
           {slides[currentSlide].smallHeading}
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
           {slides[currentSlide].heading}
         </h1>
-        <p className="text-gray-300 text-sm md:text-lg max-w-md mx-auto mb-6">
+        <p className="text-gray-300 text-sm md:text-lg max-w-4xl mx-auto mb-6">
           {slides[currentSlide].description}
         </p>
         <button className="flex items-center bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors">

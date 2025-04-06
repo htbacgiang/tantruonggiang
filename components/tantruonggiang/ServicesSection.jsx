@@ -21,7 +21,7 @@ export default function ServicesSection() {
           <div className="flex flex-col items-center group">
             <div className="relative w-full h-48 md:h-64">
               <Image
-                src="/images/thiet-ke-noi-that-hien-dai-1-768x576.jpg" // Thay bằng đường dẫn đến hình ảnh của bạn
+                src="/images/thiet-ke-noi-that-hien-dai.jpg" // Thay bằng đường dẫn đến hình ảnh của bạn
                 alt="Thiết Kế Nội Thất"
                 layout="fill"
                 objectFit="cover"
@@ -48,7 +48,7 @@ export default function ServicesSection() {
           <div className="flex flex-col items-center group">
             <div className="relative w-full h-48 md:h-64">
               <Image
-                src="/images/thi-cong-noi-that-768x576.png" // Thay bằng đường dẫn đến hình ảnh của bạn
+                src="/images/thi-cong-noi-that.png" // Thay bằng đường dẫn đến hình ảnh của bạn
                 alt="Thi Công Nội Thất"
                 layout="fill"
                 objectFit="cover"
@@ -75,7 +75,7 @@ export default function ServicesSection() {
           <div className="flex flex-col items-center group">
             <div className="relative w-full h-48 md:h-64">
               <Image
-                src="/images/noi-that-go-cong-nghiep-768x576.jpg" // Thay bằng đường dẫn đến hình ảnh của bạn
+                src="/images/noi-that-go-cong-nghiep.jpg" // Thay bằng đường dẫn đến hình ảnh của bạn
                 alt="Nội Thất Gỗ Công Nghiệp"
                 layout="fill"
                 objectFit="cover"
