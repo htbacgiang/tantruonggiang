@@ -1,6 +1,6 @@
-// components/tantruonggiang/Footer.js
+import Link from 'next/link';
 import Image from "next/image";
-import { FaPhone, FaEnvelope, FaClock, FaMapMarkerAlt, FaParking, FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaClock, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -28,24 +28,19 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="text-orange-500 mr-2" />
-                <span>tantruonggiang.noithat@gmail.com
-
-                </span>
+                <span>tantruonggiang.noithat@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <FaClock className="text-orange-500 mr-2" />
-                <div className="flex-col ">
-                  <p>Thời gian mở cửa: 08:00 - 18:00 </p>
+                <div className="flex-col">
+                  <p>Thời gian mở cửa: 08:00 - 18:00</p>
                   <span>(Làm việc cả thứ 7 & CN nghỉ)</span>
                 </div>
-
-
               </li>
               <li className="flex items-center">
                 <FaMapMarkerAlt className="text-orange-500 mr-2" />
                 <span>Số 10 lô C5, KDT Geleximco Lê Trọng Tấn</span>
               </li>
-
             </ul>
           </div>
         </div>
@@ -56,11 +51,31 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Giới Thiệu</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/gioi-thieu" className="hover:text-orange-500">Về Tân Trường Giang</a></li>
-              <li><a href="/lien-he" className="hover:text-orange-500">Liên hệ</a></li>
-              <li><a href="/tuyen-dung" className="hover:text-orange-500">Tuyển dụng</a></li>
-              <li><a href="/du-an" className="hover:text-orange-500">Dự án</a></li>
-              <li><a href="/bai-viet" className="hover:text-orange-500">Tin tức</a></li>
+              <li>
+                <Link href="/gioi-thieu" className="hover:text-orange-500">
+                  Về Tân Trường Giang
+                </Link>
+              </li>
+              <li>
+                <Link href="/lien-he" className="hover:text-orange-500">
+                  Liên hệ
+                </Link>
+              </li>
+              <li>
+                <Link href="/tuyen-dung" className="hover:text-orange-500">
+                  Tuyển dụng
+                </Link>
+              </li>
+              <li>
+                <Link href="/du-an" className="hover:text-orange-500">
+                  Dự án
+                </Link>
+              </li>
+              <li>
+                <Link href="/bai-viet" className="hover:text-orange-500">
+                  Tin tức
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -68,11 +83,26 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Dịch Vụ</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="/thiet-ke-noi-that-chung-cu" className="hover:text-orange-500">Thiết kế nội thất chung cư</a></li>
-              <li><a href="/thiet-ke-noi-that-nha-pho" className="hover:text-orange-500">Thiết kế nội thất nhà phố</a></li>
-              <li><a href="/thi-cong-noi-that-chung-cu" className="hover:text-orange-500">Thi công nội thất chung cư</a></li>
-              <li><a href="/thi-cong-noi-that-nha-pho" className="hover:text-orange-500">Thi công nội thất nhà phố</a></li>
-
+              <li>
+                <Link href="/thiet-ke-noi-that-chung-cu" className="hover:text-orange-500">
+                  Thiết kế nội thất chung cư
+                </Link>
+              </li>
+              <li>
+                <Link href="/thiet-ke-noi-that-nha-pho" className="hover:text-orange-500">
+                  Thiết kế nội thất nhà phố
+                </Link>
+              </li>
+              <li>
+                <Link href="/thi-cong-noi-that-chung-cu" className="hover:text-orange-500">
+                  Thi công nội thất chung cư
+                </Link>
+              </li>
+              <li>
+                <Link href="/thi-cong-noi-that-nha-pho" className="hover:text-orange-500">
+                  Thi công nội thất nhà phố
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -80,13 +110,41 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Sản Phẩm Gỗ Đặc Chọn</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-orange-500">Giường gỗ đặc chọn</a></li>
-              <li><a href="#" className="hover:text-orange-500">Bàn ghế gỗ đặc chọn</a></li>
-              <li><a href="#" className="hover:text-orange-500">Sofa gỗ đặc chọn</a></li>
-              <li><a href="#" className="hover:text-orange-500">Tủ bếp gỗ đặc chọn</a></li>
-              <li><a href="#" className="hover:text-orange-500">Bàn trang điểm gỗ đặc chọn</a></li>
-              <li><a href="#" className="hover:text-orange-500">Tủ quần áo gỗ đặc chọn</a></li>
-              <li><a href="#" className="hover:text-orange-500">Kệ tivi gỗ đặc chọn</a></li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Giường gỗ đặc chọn
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Bàn ghế gỗ đặc chọn
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Sofa gỗ đặc chọn
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Tủ bếp gỗ đặc chọn
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Bàn trang điểm gỗ đặc chọn
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Tủ quần áo gỗ đặc chọn
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Kệ tivi gỗ đặc chọn
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -94,18 +152,35 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Hỗ Trợ Khách Hàng</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-orange-500">Chính sách bảo mật</a></li>
-              <li><a href="#" className="hover:text-orange-500">Chính sách sử dụng dịch vụ</a></li>
-              <li><a href="#" className="hover:text-orange-500">Điều khoản sử dụng website</a></li>
-              <li><a href="#" className="hover:text-orange-500">Chính sách sử dụng Cookie</a></li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Chính sách bảo mật
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Chính sách sử dụng dịch vụ
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Điều khoản sử dụng website
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-orange-500">
+                  Chính sách sử dụng Cookie
+                </Link>
+              </li>
             </ul>
           </div>
+
           {/* Column 5: Bản Đồ (Embedded Google Map) */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Bản Đồ</h3>
             <div className="relative h-40 rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14929.45062447485!2d105.84077260000001!3d20.69549305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135cbbd49100805%3A0xf7bd8a83a0cf059c!2zRWNvIELhuq9jIEdpYW5nIC0gTsO0bmcgVHLhuqFpIEjhu691IEPGoQ!5e0!3m2!1svi!2s!4v1743697165090!5m2!1svi!2s"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6832.190600280168!2d105.73607760655545!3d20.981865785614055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1svi!2s!4v1743957236803!5m2!1svi!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -124,13 +199,10 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Cluster 3: Social Media, Certifications, and Company Name */}
         <div className="border-t border-gray-700 pt-6 flex flex-col justify-center items-center">
-          {/* Left: Social Media Icons */}
-          {/* Right: Company Name */}
           <p className="text-gray-400 text-lg mb-2">
             CÔNG TY CỔ PHẦN KIẾN TRÚC NỘI THẤT TÂN TRƯỜNG GIANG
           </p>
@@ -148,8 +220,6 @@ export default function Footer() {
               <FaTiktok className="text-white hover:text-orange-500 text-xl" />
             </a>
           </div>
-
-
         </div>
       </div>
     </footer>
