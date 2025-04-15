@@ -108,7 +108,7 @@ const SinglePost: NextPage<Props> = ({ post }) => {
                 .filter((p) => p.category === category)
                 .slice(0, 5)
                 .map((p) => (
-                  <Link key={p.slug} href={`/bai-viet/${p.slug}`} legacyBehavior>
+                  <Link key={p.slug} href={`/goc-phong-thuy/${p.slug}`} legacyBehavior>
                     <a className="flex space-x-4 font-semibold text-primary-dark dark:text-primary hover:underline w-full">
                       {p.thumbnail && (
                         <Image

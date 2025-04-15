@@ -18,7 +18,7 @@ export default function Home({ posts, meta }) {
     "@type": "Organization",
     "name": "GreenLa Home",
     "url": "https://greenlahome.vn",
-    "logo": "https://greenlahome.vn/logo-greenlahome.png", // Cập nhật logo
+    "logo": "https://greenlahome.vn/greenlahomelogo.png", // Cập nhật logo
     "sameAs": ["https://www.facebook.com/greenlahome"],
     "description":
       "GreenLa Home chuyên thiết kế và thi công nội thất chung cư, nhà phố, nội thất chọn gói gỗ công nghiệp chất lượng cao, tối ưu chi phí và thẩm mỹ.",
@@ -60,29 +60,29 @@ export async function getServerSideProps() {
     // Meta data tối ưu cho GreenLa Home
     const meta = {
       title:
-        "GreenLa Home - Thiết Kế & Thi Công Nội Thất Chung Cư, Nhà Phố, Gỗ Công Nghiệp",
+        "GreenLa Home - Thiết Kế & Thi Công Nội Thất Chung Cư, Nhà Phố, Nột Thất Gỗ Công Nghiệp",
       description:"Greenla Home – chuyên gia thiết kế và thi công nội thất chung cư, nhà phố, biệt thự. Chúng tôi mang đến không gian sống hiện đại, tối ưu, hợp phong thủy với chi phí hợp lý. Liên hệ ngay để biến ý tưởng thành hiện thực! Hotline: 0962922332.",
       keywords:
         "thiết kế nội thất, thi công nội thất, nội thất chung cư, nội thất nhà phố, nội thất gỗ công nghiệp, GreenLa Home",
       robots: "index, follow",
       author: "GreenLa Home",
-      canonical: "https://greenlahome.vn/",
+      canonical: "https://greenlahome.vn",
       og: {
         title:
-          "GreenLa Home - Giải Pháp Nội Thất Chung Cư, Nhà Phố & Gỗ Công Nghiệp",
+          "GreenLa Home - Giải Pháp Nội Thất Chung Cư, Nhà Phố & Nột Thất Gỗ Công Nghiệp",
       description:"Greenla Home – chuyên gia thiết kế và thi công nội thất chung cư, nhà phố, biệt thự. Chúng tôi mang đến không gian sống hiện đại, tối ưu, hợp phong thủy với chi phí hợp lý. Liên hệ ngay để biến ý tưởng thành hiện thực! Hotline: 0962922332.",
 
         type: "website",
-        image: "https://greenlahome.vn/images/banner4.jpg", // Cập nhật hình ảnh
+        image: "https://greenlahome.vn/images/noi-that-1.jpg",
         imageWidth: "1200",
         imageHeight: "630",
-        url: "https://greenlahome.vn/",
+        url: "https://greenlahome.vn",
       },
       twitter: {
         card: "summary_large_image",
         title: "GreenLa Home - Nội Thất Chung Cư, Nhà Phố Chuyên Nghiệp",
         description:"Greenla Home – chuyên gia thiết kế và thi công nội thất chung cư, nhà phố, biệt thự. Chúng tôi mang đến không gian sống hiện đại, tối ưu, hợp phong thủy với chi phí hợp lý. Liên hệ ngay để biến ý tưởng thành hiện thực! Hotline: 0962922332.",
-        image: "https://greenlahome.vn/images/banner4.jpg",
+        image: "https://greenlahome.vn/images/noi-that-1.jpg",
       },
     };
 
@@ -97,7 +97,11 @@ export async function getServerSideProps() {
     return {
       props: {
         posts: [],
-        meta: {}, // Trả về meta rỗng để tránh lỗi
+        meta: {
+          title: "GreenLa Home - Nội Thất Chung Cư, Nhà Phố Chuyên Nghiệp",
+          description:"Greenla Home – chuyên gia thiết kế và thi công nội thất chung cư, nhà phố, biệt thự. Chúng tôi mang đến không gian sống hiện đại, tối ưu, hợp phong thủy với chi phí hợp lý. Liên hệ ngay để biến ý tưởng thành hiện thực! Hotline: 0962922332.",
+          canonical: "https://greenlahome.vn",
+        },
       },
     };
   }

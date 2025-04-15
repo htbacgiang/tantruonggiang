@@ -172,7 +172,7 @@ const PropertyDetail = ({ project }) => {
                   alt={`Hình ảnh ${currentImage + 1} của ${project.title}`}
                   width={800}
                   height={400}
-                  className="w-full md:h-[70vh] h-80 object-cover rounded-lg"
+                  className="w-full md:h-[70vh] h-80 object-fit rounded-lg"
                   loading="lazy"
                 />
                 <button

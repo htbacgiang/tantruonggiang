@@ -59,9 +59,9 @@ type Props = {
   meta: MetaData;
 };
 
-const host = "https://truongnq.vn/bai-viet";
+const host = "https://greenlahome.vn/goc-chuyen-gia";
 
-export const APP_NAME = "Trường NQ Web";
+export const APP_NAME = "Nội thất Greenla Home";
 const SinglePost: NextPage<Props> = ({ post }) => {
   const { title, content, meta, slug, thumbnail, category, createdAt, relatedPosts } = post;
 
@@ -72,8 +72,8 @@ const SinglePost: NextPage<Props> = ({ post }) => {
           <div className="md:pb-20 pb-6 container mx-auto mt-[60px] sm:mt-[91px]">
             {/* Breadcrumb */}
             <div className="flex font-semibold gap-2 text-sm text-gray-600">
-              <Link href="/bai-viet" className="hover:text-blue-800 whitespace-nowrap">
-                Bài viết
+              <Link href="/goc-chuyen-gia" className="hover:text-blue-800 whitespace-nowrap">
+                Góc chuyên gia
               </Link>
               <span>›</span>
               <span className="flex font-semibold gap-2 mb-4 text-sm text-gray-600">
@@ -108,7 +108,7 @@ const SinglePost: NextPage<Props> = ({ post }) => {
                 .filter((p) => p.category === category)
                 .slice(0, 5)
                 .map((p) => (
-                  <Link key={p.slug} href={`/bai-viet/${p.slug}`} legacyBehavior>
+                  <Link key={p.slug} href={`/goc-chuyen-gia/${p.slug}`} legacyBehavior>
                     <a className="flex space-x-4 font-semibold text-primary-dark dark:text-primary hover:underline w-full">
                       {p.thumbnail && (
                         <Image
@@ -172,23 +172,23 @@ export const getServerSideProps: GetServerSideProps<
     const metaData: MetaData = {
       title,
       description: meta,
-      author: "Trường NQ Web",
-      canonical: `https://truongnq.vn/bai-viet/${slug}`,
+      author: "Nội thất Greenla Home",
+      canonical: `https://greenlahome.vn/goc-chuyen-gia/${slug}`,
       og: {
         title,
         description: meta,
         type: "website",
-        image: thumbnail?.url || "https://truongnq.vn/baner-web.jpg",
+        image: thumbnail?.url || "https://greenlahome.vn/images/noi-that-1.jpg",
         imageWidth: "1200",
         imageHeight: "630",
-        url: `https://truongnq.vn/bai-viet/${slug}`,
-        siteName: "Trường NQ Web",
+        url: `https://greenlahome.vn/goc-chuyen-gia/${slug}`,
+        siteName: "Nội thất Greenla Home",
       },
       twitter: {
         card: "summary_large_image",
         title,
         description: meta,
-        image: thumbnail?.url || "https://truongnq.vn/baner-web.jpg",
+        image: thumbnail?.url || "https://greenlahome.vn/images/noi-that-1.jpg",
       },
     };
 

@@ -38,7 +38,7 @@ type Props = {
 };
 
 const Blogs: NextPage<Props> = ({ posts, meta }) => {
-  const postsPerPage = 2; // Hiển thị 2 bài viết trên mỗi trang
+  const postsPerPage = 20; // Hiển thị 2 bài viết trên mỗi trang
   const [currentPage, setCurrentPage] = useState(1); // Trang hiện tại
 
   // Tính tổng số trang
@@ -69,7 +69,7 @@ const Blogs: NextPage<Props> = ({ posts, meta }) => {
       <div className="relative h-[40vh] w-full">
         {/* Background Image */}
         <Image
-          src="/images/banner5.jpg"
+          src="/images/banner5.png"
           alt="Góc Phong Thủy - GreenLa Home"
           layout="fill"
           objectFit="cover"
@@ -119,6 +119,8 @@ const Blogs: NextPage<Props> = ({ posts, meta }) => {
                           className="relative cursor-pointer rounded-lg overflow-hidden"
                           style={{ aspectRatio: "16/9" }}
                         >
+                          
+                          <Link href={`/goc-chuyen-gia/${post.slug}`} >
                           <Image
                             src={post.thumbnail}
                             fill={true}
@@ -126,6 +128,7 @@ const Blogs: NextPage<Props> = ({ posts, meta }) => {
                             className="object-cover hover:scale-105 transition-all ease duration-300"
                             alt={post.title}
                           />
+                          </Link>
                         </div>
                       )}
                       <div className="flex flex-col gap-2">
@@ -133,7 +136,7 @@ const Blogs: NextPage<Props> = ({ posts, meta }) => {
                           {formatDate(post.createdAt)} - {post.category}
                         </p>
                         <Link
-                          href={`/bai-viet/${post.slug}`}
+                          href={`/goc-chuyen-gia/${post.slug}`}
                           className="text-xl md:text-2xl font-bold hover:text-green-600 text-green-500"
                           aria-label={post.title}
                         >
@@ -145,7 +148,7 @@ const Blogs: NextPage<Props> = ({ posts, meta }) => {
 
                         </p>
                         <Link
-                          href={`/bai-viet/${post.slug}`}
+                          href={`/goc-chuyen-gia/${post.slug}`}
                           className="text-sm text-gray-400 uppercase hover:text-green-500"
                         >
                           Xem thêm
@@ -256,7 +259,7 @@ const Blogs: NextPage<Props> = ({ posts, meta }) => {
                           {formatDate(posts[index]?.createdAt)}
                         </p>
                         <Link
-                          href={`/bai-viet/${posts[index]?.slug}`}
+                          href={`/goc-chuyen-gia/${posts[index]?.slug}`}
                           className="text-base font-medium hover:text-orange-500 line-clamp-2"
                           aria-label={posts[index]?.title}
                         >
@@ -299,7 +302,7 @@ export const getServerSideProps: GetServerSideProps<{
         description:
           "Dịch vụ thiết kế và tư vấn nội thất kết hợp phong thủy, mang đến không gian sống hoàn hảo từ GreenLaHome.",
         type: "website",
-        image: "https://greenlahome.vn/images/baner-phong-thuy.jpg",
+        image: "https://greenlahome.vn/images/noi-that-1.jpg",
         imageWidth: "1200",
         imageHeight: "630",
         url: "https://greenlahome.vn/goc-chuyen-gia ",
@@ -310,7 +313,7 @@ export const getServerSideProps: GetServerSideProps<{
         title: "Thiết Kế và Tư Vấn Nội Thất - GreenLaHome",
         description:
           "Tìm hiểu cách thiết kế và tư vấn nội thất kết hợp phong thủy tại GreenLaHome để nâng tầm không gian sống.",
-        image: "https://greenlahome.vn/images/baner-phong-thuy.jpg",
+        image: "https://greenlahome.vn/images/noi-that-1.jpg",
       },
     };
 

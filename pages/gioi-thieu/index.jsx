@@ -10,10 +10,8 @@ import ConsultationForm from "../../components/tantruonggiang/ConsultationForm";
 import Testimonials from "../../components/tantruonggiang/Testimonials";
 
 export default function AboutUs({ meta }) {
-  // State to control whether the animation should run
   const [runAnimation, setRunAnimation] = useState(false);
 
-  // Run the animation only once on component mount
   useEffect(() => {
     setRunAnimation(true);
   }, []);
@@ -22,7 +20,6 @@ export default function AboutUs({ meta }) {
     <DefaultLayout>
       {/* Hero Section */}
       <section className="relative h-[300px] md:h-[400px] bg-gray-900">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/noi-that-1.jpg"
@@ -33,8 +30,6 @@ export default function AboutUs({ meta }) {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
-
-        {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Về Chúng Tôi</h1>
           <nav aria-label="Breadcrumb" className="text-gray-300">
@@ -52,25 +47,24 @@ export default function AboutUs({ meta }) {
       {/* Main Section */}
       <section className="py-12 bg-gray-900">
         <div className="container mx-auto px-4">
-          {/* Grid Layout for Two Columns */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Left Column: Text Content and Image 1 */}
             <div className="flex flex-col justify-center space-y-6">
               <div>
                 <p className="text-orange-500 text-sm uppercase tracking-widest mb-2">
-                  CHÚNG TÔI THIẾT KẾ
+                  CHÚNG TÔI LÀ
                 </p>
                 <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
-                  Nội Thất Hiện Đại Cho Sự Tiện Nghi Tối Ưu
+                  GreenLa Home - Nội Thất Tinh Tế
                 </h2>
                 <p className="text-gray-300 text-sm md:text-lg mb-6">
-                  Tại Nội thất GreenLa Home, chúng tôi cam kết mang đến những
-                  thiết kế nội thất tinh tế, hiện đại và tiện nghi. Với đội ngũ
-                  chuyên gia giàu kinh nghiệm, chúng tôi tạo ra không gian sống
-                  hoàn hảo, phù hợp với mọi phong cách và nhu cầu của bạn.
+                  GreenLa Home – Chuyên gia thiết kế và thi công nội thất trọn gói,
+                  mang đến không gian sống hiện đại, tiện nghi cho chung cư, nhà phố.
+                  Với chất liệu gỗ công nghiệp cao cấp, phong cách đa dạng từ tối giản,
+                  Scandinavian đến Japandi, Indochine, chúng tôi tối ưu diện tích từ
+                  30-120m², kết hợp phong thủy để thu hút tài lộc, sức khỏe.
                 </p>
               </div>
-              {/* Image 1 (Bottom-Left) */}
               <div className="relative h-64 w-full rounded-lg overflow-hidden">
                 <Image
                   src="/images/noi-that-1.jpg"
@@ -86,7 +80,6 @@ export default function AboutUs({ meta }) {
 
             {/* Right Column: Image 2 and Features */}
             <div className="space-y-6">
-              {/* Image 2 (Top-Right) */}
               <div className="relative h-64 w-full rounded-lg overflow-hidden">
                 <Image
                   src="/images/noi-that-2.jpg"
@@ -98,28 +91,26 @@ export default function AboutUs({ meta }) {
                   }`}
                 />
               </div>
-
-              {/* Features */}
               <div>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Chất Lượng Nội Thất Đỉnh Cao
+                  Cam Kết Chất Lượng
                 </h2>
                 <p className="text-gray-300 text-sm md:text-lg mb-4">
-                  Chúng tôi sử dụng chất liệu cao cấp và quy trình sản xuất hiện
-                  đại để đảm bảo mỗi sản phẩm đều đạt tiêu chuẩn cao nhất.
+                  Chúng tôi sử dụng công nghệ hiện đại và vật liệu cao cấp để tạo ra
+                  sản phẩm bền đẹp, phù hợp với mọi phong cách sống.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-gray-300">
                     <FaCheckCircle className="text-orange-500 mr-2" />
-                    Sử dụng gỗ công nghiệp cao cấp, bền đẹp theo thời gian.
+                    Gỗ công nghiệp cao cấp, bền đẹp theo thời gian.
                   </li>
                   <li className="flex items-center text-gray-300">
                     <FaCheckCircle className="text-orange-500 mr-2" />
-                    Thiết kế hiện đại, phù hợp với mọi không gian sống.
+                    Phong cách thiết kế đa dạng, tối ưu không gian.
                   </li>
                   <li className="flex items-center text-gray-300">
                     <FaCheckCircle className="text-orange-500 mr-2" />
-                    Quy trình thi công chuyên nghiệp, đảm bảo tiến độ.
+                    Thi công trọn gói, đúng tiến độ, tiết kiệm chi phí.
                   </li>
                 </ul>
               </div>
@@ -138,33 +129,30 @@ export default function AboutUs({ meta }) {
 
 export async function getServerSideProps() {
   const meta = {
-    title: "Về Chúng Tôi – Nội thất GreenLa Home",
-    description:
-      "Tìm hiểu về Nội thất GreenLa Home – chuyên gia thiết kế và thi công nội thất cao cấp, mang đến không gian sống sang trọng, tiện nghi cho gia đình Việt.",
+    title: "Giới Thiệu GreenLa Home - Thiết Kế Nội Thất Trọn Gói",
+    content:
+      "GreenLa Home – Chuyên gia thiết kế và thi công nội thất trọn gói, mang đến không gian sống hiện đại, tiện nghi cho chung cư, nhà phố. Khám phá xu hướng nội thất 2025!",
     keywords:
-      "về chúng tôi, nội thất GreenLa Home, thiết kế nội thất, thi công nội thất, nội thất cao cấp",
-    author: "Nội thất GreenLa Home",
+      "thiết kế nội thất, nội thất chung cư, thi công trọn gói, nội thất gỗ công nghiệp, GreenLa Home",
     robots: "index, follow",
+    author: "GreenLa Home",
     canonical: "https://greenlahome.vn/gioi-thieu",
     og: {
-      title: "Về Chúng Tôi – Nội thất GreenLa Home",
+      title: "GreenLa Home – Nội Thất Hiện Đại, Tiện Nghi",
       description:
-        "Khám phá Nội thất GreenLa Home – đơn vị thiết kế và thi công nội thất cao cấp, tạo nên không gian sống sang trọng, tiện nghi.",
+        "Khám phá dịch vụ thiết kế và thi công nội thất trọn gói từ GreenLa Home: chung cư, nhà phố, gỗ công nghiệp cao cấp, phong cách đa dạng.",
       type: "website",
       image: "https://greenlahome.vn/images/noi-that-1.jpg",
       imageWidth: "1200",
       imageHeight: "630",
       url: "https://greenlahome.vn/gioi-thieu",
-      siteName: "Nội thất GreenLa Home",
-      locale: "vi_VN",
     },
     twitter: {
       card: "summary_large_image",
-      title: "Về Chúng Tôi – Nội thất GreenLa Home",
+      title: "Giới Thiệu GreenLa Home - Thiết Kế Nội Thất Trọn Gói",
       description:
-        "Nội thất GreenLa Home – chuyên thiết kế, thi công nội thất cao cấp, mang đến không gian sống sang trọng.",
+        "GreenLa Home – Chuyên gia thiết kế và thi công nội thất trọn gói, mang đến không gian sống hiện đại, tiện nghi cho chung cư, nhà phố.",
       image: "https://greenlahome.vn/images/noi-that-1.jpg",
-      site: "@TanTruongGiang", // Thay bằng handle thật nếu có
     },
   };
 

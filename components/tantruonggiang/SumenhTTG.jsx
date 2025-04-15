@@ -35,7 +35,7 @@ export default function AboutNavigation() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/banner5.jpg"
+          src="/images/banner5.png"
           alt="About Navigation Background"
           layout="fill"
           objectFit="cover"

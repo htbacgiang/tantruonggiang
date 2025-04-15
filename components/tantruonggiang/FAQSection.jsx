@@ -95,12 +95,12 @@ export default function FAQSection() {
               </a>{" "}
             <br/>
               <a href="mailto:tantruonggiang.noithat@gmail.com" className="hover:text-orange-500 transition-colors duration-200">
-                Email: tantruonggiang.noithat@gmail.com
+                Email: lienhe@greenlahome.vn
               </a>
             </p>
             <div className="relative h-48 rounded-lg overflow-hidden mb-4">
               <Image
-                src="/banner2.jpg"
+                src="/images/banner5.png"
                 alt="Nội thất GreenLa Home Showroom"
                 layout="fill"
                 objectFit="cover"

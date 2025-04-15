@@ -94,16 +94,16 @@ export async function getServerSideProps() {
       "liên hệ, GreenLa Home, địa chỉ, email, số điện thoại, nội thất, thiết kế nội thất",
     author: "GreenLa Home",
     robots: "index, follow",
-    canonical: "https://greenlahome.vn/contact",
+    canonical: "https://greenlahome.vn/lien-he",
     og: {
       title: "Liên Hệ – GreenLa Home",
       description:
         "Liên hệ với GreenLa Home qua địa chỉ, email và số điện thoại để được tư vấn về thiết kế và thi công nội thất.",
       type: "website",
-      image: "https://greenlahome.vn/images/contact-og.jpg",
+      image: "https://greenlahome.vn/images/banner4.png",
       imageWidth: "1200",
       imageHeight: "630",
-      url: "https://greenlahome.vn/contact",
+      url: "https://greenlahome.vn/hien-he",
       siteName: "GreenLa Home",
       locale: "vi_VN",
     },
@@ -112,7 +112,7 @@ export async function getServerSideProps() {
       title: "Liên Hệ – GreenLa Home",
       description:
         "Liên hệ với GreenLa Home để được tư vấn về thiết kế và thi công nội thất cao cấp.",
-      image: "https://greenlahome.vn/images/contact-og.jpg",
+      image: "https://greenlahome.vn/images/banner4.png",
       site: "@GreenLaHome", // Replace with actual Twitter handle if available
     },
   };

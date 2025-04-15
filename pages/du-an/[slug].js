@@ -16,7 +16,7 @@ export default function ProjectDetail() {
   // Dữ liệu cho SEO
   const pageTitle = `${project.title} | Thi công nội thất cao cấp`;
   const pageDescription = `Dự án ${project.title} - Khách hàng: ${project.customer}, Phong cách: ${project.style}, Loại hình: ${project.location}, Diện tích: ${project.area}. Xem chi tiết tại đây!`;
-  const pageUrl = `https://greenlahome.vn/du-an/${project.slug}`; // Thay "yourwebsite.com" bằng domain của bạn
+  const pageUrl = `https://greenlahome.vn/du-an/${project.slug}`; // 
   const pageImage = project.image;
 
   // JSON-LD Structured Data
