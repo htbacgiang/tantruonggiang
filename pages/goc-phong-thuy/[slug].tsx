@@ -59,9 +59,9 @@ type Props = {
   meta: MetaData;
 };
 
-const host = "https://truongnq.vn/bai-viet";
+const host = "https://greenlahome.vn/goc-phong-thuy";
 
-export const APP_NAME = "Trường NQ Web";
+export const APP_NAME = "Greenla Home";
 const SinglePost: NextPage<Props> = ({ post }) => {
   const { title, content, meta, slug, thumbnail, category, createdAt, relatedPosts } = post;
 
@@ -172,23 +172,23 @@ export const getServerSideProps: GetServerSideProps<
     const metaData: MetaData = {
       title,
       description: meta,
-      author: "Trường NQ Web",
-      canonical: `https://truongnq.vn/bai-viet/${slug}`,
+      author: "Greenla Home",
+      canonical: `https://greenlahome.vn/goc-phong-thuy/${slug}`,
       og: {
         title,
         description: meta,
         type: "website",
-        image: thumbnail?.url || "https://truongnq.vn/baner-web.jpg",
+        image: thumbnail?.url || "https://greenlahome.vn/banner4.png",
         imageWidth: "1200",
         imageHeight: "630",
-        url: `https://truongnq.vn/bai-viet/${slug}`,
-        siteName: "Trường NQ Web",
+        url: `https://greenlahome.vn/goc-phong-thuy/${slug}`,
+        siteName: "Greenla Home",
       },
       twitter: {
         card: "summary_large_image",
         title,
         description: meta,
-        image: thumbnail?.url || "https://truongnq.vn/baner-web.jpg",
+        image: thumbnail?.url || "https://greenlahome.vn/banner4.png",
       },
     };
 

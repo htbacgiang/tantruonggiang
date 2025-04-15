@@ -231,7 +231,7 @@ export const getServerSideProps = async () => {
         "thiết kế nội thất nhà phố, nội thất nhà phố, thiết kế nội thất, GreenLa Home, nội thất hiện đại",
       robots: "index, follow",
       author: "GreenLa Home",
-      canonical: "https://greenlahome.vn/thi-cong-noi-that-go-cong-nghiep",
+      canonical: "https://greenlahome.vn/thiet-ke-noi-that-nha-pho",
       og: {
         title: "GreenLa Home – Thiết Kế Nội Thất Nhà Phố Chuyên Nghiệp",
         description:
@@ -240,7 +240,7 @@ export const getServerSideProps = async () => {
         image: "https://greenlahome.vn/images/noi-that-1.jpg",
         imageWidth: "1200",
         imageHeight: "630",
-        url: "https://greenlahome.vn/thi-cong-noi-that-go-cong-nghiep",
+        url: "https://greenlahome.vn/thiet-ke-noi-that-nha-pho",
       },
       twitter: {
         card: "summary_large_image",
@@ -266,7 +266,7 @@ export const getServerSideProps = async () => {
           title: "Thiết Kế Nội Thất Nhà Phố – GreenLa Home",
           description:
             "Dịch vụ thiết kế nội thất nhà phố chuyên nghiệp từ GreenLa Home.",
-          canonical: "https://greenlahome.vn/thi-cong-noi-that-go-cong-nghiep",
+          canonical: "https://greenlahome.vn/thiet-ke-noi-that-nha-pho",
         },
       },
     };

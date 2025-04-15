@@ -37,7 +37,7 @@ export default function Signup({ csrfToken }) {
   const [status, setStatus] = useState("");
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://greenlahome.vn";
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);

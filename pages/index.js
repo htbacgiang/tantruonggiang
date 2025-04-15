@@ -60,7 +60,7 @@ export async function getServerSideProps() {
     // Meta data tối ưu cho GreenLa Home
     const meta = {
       title:
-        "GreenLa Home - Thiết Kế & Thi Công Nội Thất Chung Cư, Nhà Phố, Nột Thất Gỗ Công Nghiệp",
+        "GreenLa Home - Thiết Kế & Thi Công Nội Thất Chung Cư, Nhà Phố, Nội Thất Gỗ Công Nghiệp",
       description:"Greenla Home – chuyên gia thiết kế và thi công nội thất chung cư, nhà phố, biệt thự. Chúng tôi mang đến không gian sống hiện đại, tối ưu, hợp phong thủy với chi phí hợp lý. Liên hệ ngay để biến ý tưởng thành hiện thực! Hotline: 0962922332.",
       keywords:
         "thiết kế nội thất, thi công nội thất, nội thất chung cư, nội thất nhà phố, nội thất gỗ công nghiệp, GreenLa Home",
@@ -69,7 +69,7 @@ export async function getServerSideProps() {
       canonical: "https://greenlahome.vn",
       og: {
         title:
-          "GreenLa Home - Giải Pháp Nội Thất Chung Cư, Nhà Phố & Nột Thất Gỗ Công Nghiệp",
+          "GreenLa Home - Giải Pháp Nội Thất Chung Cư, Nhà Phố & Nội Thất Gỗ Công Nghiệp",
       description:"Greenla Home – chuyên gia thiết kế và thi công nội thất chung cư, nhà phố, biệt thự. Chúng tôi mang đến không gian sống hiện đại, tối ưu, hợp phong thủy với chi phí hợp lý. Liên hệ ngay để biến ý tưởng thành hiện thực! Hotline: 0962922332.",
 
         type: "website",
