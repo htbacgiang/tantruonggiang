@@ -63,7 +63,7 @@ export default function Header() {
                 src={logo}
                 alt="logo"
                 width={80}
-                height={30}
+                height={40}
                 className={`cursor-pointer filter brightness-0 invert transition-all duration-300 ease-in-out ${
                   scrolling ? "md:opacity-0 md:-translate-y-4 md:h-0 md:overflow-hidden" : "opacity-100 translate-y-0 h-auto"
                 }`}
