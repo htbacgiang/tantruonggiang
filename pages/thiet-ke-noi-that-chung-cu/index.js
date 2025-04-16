@@ -224,6 +224,7 @@ export const getServerSideProps = async () => {
     const formattedPosts = formatPosts(posts);
     const meta = {
       title: "Thiết Kế Nội Thất Chung Cư Từ A-Z | Phong Cách, Diện Tích, Phong Thủy",
+      description:"Khám phá hướng dẫn chi tiết thiết kế nội thất chung cư từ A-Z, cập nhật xu hướng 2025! Tìm hiểu cách tối ưu không gian sống cho căn hộ từ 30-120m² với các phong cách hiện đại, tối giản, Scandinavian, Japandi, Indochine. Nhận gợi ý bố trí phòng khách, bếp, ngủ, ban công, kết hợp phong thủy hợp mệnh gia chủ để thu hút tài lộc, sức khỏe.",
       content:"Khám phá hướng dẫn chi tiết thiết kế nội thất chung cư từ A-Z, cập nhật xu hướng 2025! Tìm hiểu cách tối ưu không gian sống cho căn hộ từ 30-120m² với các phong cách hiện đại, tối giản, Scandinavian, Japandi, Indochine. Nhận gợi ý bố trí phòng khách, bếp, ngủ, ban công, kết hợp phong thủy hợp mệnh gia chủ để thu hút tài lộc, sức khỏe.",
       keywords:
         "thi công nội thất trọn gói, nội thất chung cư, nội thất nhà phố, nội thất gỗ công nghiệp, GreenLa Home, thiết kế nội thất",
